@@ -3,6 +3,9 @@ package com.example.rv4.Direccion.Controller;
 import com.example.rv4.Direccion.Domain.Direccion;
 import com.example.rv4.Direccion.Service.DireccionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +21,15 @@ public class DireccionController {
     @Autowired
     private DireccionService direccionService;
 
+
+    @GetMapping("/paginado")
+    public ResponseEntity<Page<Direccion>> listaDirecciones(@PageableDefault(size = 10, page = 0)Pageable pageable){
+        Page<Direccion> direcciones= direccionService.findAll(pageable);
+        if (pageable.getPageNumber() > direcciones.getTotalPages()){
+            return new ResponseEntity<>(direcciones, HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(direcciones, HttpStatus.OK);
+    }
 
     @GetMapping
     public ResponseEntity<List<Direccion>> listaDirecciones() {

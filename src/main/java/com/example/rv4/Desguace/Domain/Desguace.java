@@ -1,7 +1,6 @@
 package com.example.rv4.Desguace.Domain;
 
 import javax.persistence.*;
-
 import com.example.rv4.Pedido.Domain.Pedido;
 import lombok.*;
 
@@ -12,6 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+
 public class Desguace {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
