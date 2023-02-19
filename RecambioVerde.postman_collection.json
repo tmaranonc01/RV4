@@ -1,0 +1,746 @@
+{
+	"info": {
+		"_postman_id": "5ef97e56-b9e7-41d9-9662-04269dc70c81",
+		"name": "RecambioVerde",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Coche",
+			"item": [
+				{
+					"name": "Obtener Coches",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/coche",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coche"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Coche por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/coche/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coche",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Coches",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"modelo\":\"no\",\r\n    \"motor\": \"no\",\r\n    \"ano\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/coche",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coche"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Coche",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"modelo\":\"no\",\r\n    \"motor\": \"no\",\r\n    \"ano\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/coche/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coche",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Coche",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/coche/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coche",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Desguace",
+			"item": [
+				{
+					"name": "Obtener Desguaces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/desguace",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"desguace"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Desguace por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/desguace/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"desguace",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Desguaces",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ciudad\":\"no\",\r\n    \"direccion\": \"no\",\r\n    \"nombre\": \"pepe\",\r\n    \"tlf\":\"99272\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/desguace",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"desguace"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Desguaces",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"ciudad\":\"no\",\r\n    \"direccion\": \"no\",\r\n    \"nombre\": \"pepe\",\r\n    \"tlf\":\"11111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/desguace",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"desguace"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Desguace",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/desguace/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"desguace",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Direccion",
+			"item": [
+				{
+					"name": "Obtener Direcciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/direccion",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direccion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Direccion por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/direccion/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direccion",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Direcciones",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"calle\":\"no\",\r\n    \"poblacion\": \"no\",\r\n    \"portal\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/direccion",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direccion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Direcciones",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"calle\":\"si\",\r\n    \"poblacion\": \"no\",\r\n    \"portal\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/direccion",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direccion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Direccion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/direccion/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"direccion",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedido",
+			"item": [
+				{
+					"name": "Obtener Pedidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pedido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Pedidos por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pedido/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Pedidos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"destino\":\"no\",\r\n    \"origen\": \"no\",\r\n    \"total\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pedido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Pedidos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"destino\":\"no\",\r\n    \"origen\": \"no\",\r\n    \"total\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pedido",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Pedido",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pedido/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pieza",
+			"item": [
+				{
+					"name": "Obtener Piezas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pieza",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pieza"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Pieza por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pieza/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pieza",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Piezas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"no\",\r\n    \"descripcion\": \"no\",\r\n    \"coche\": {\r\n        \"id\": 3,\r\n    \"modelo\":\"no\",\r\n    \"motor\": \"no\",\r\n    \"ano\": 3\r\n}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pieza",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pieza"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Piezas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"nombre\":\"no\",\r\n    \"descripcion\": \"no\",\r\n    \"coche\": {\r\n        \"id\": 2\r\n}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pieza/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pieza",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Pieza",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pieza/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pieza",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Obtener Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Usuario por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuario/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir Usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"1212\",\r\n    \"contrasena\": \"abc\",\r\n    \"correo\": \"a@a.com\",\r\n    \"nombre_usuario\":\"pepe\",\r\n    \"direccion\":\r\n    {\"id\": 3}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Usuarios",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuario/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
