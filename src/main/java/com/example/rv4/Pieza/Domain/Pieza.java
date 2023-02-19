@@ -6,11 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.lang.Nullable;
+
 
 import javax.persistence.*;
-import javax.validation.constraints.Null;
-import javax.validation.constraints.Size;
+
 
 @Entity
 @Getter
@@ -31,7 +30,4 @@ public class Pieza {
     @JoinColumn(name = "coche_id", referencedColumnName = "id")
     private Coche coche;
 
-    @Nullable
-    @Size(max = 255)
-    private String foto;
 }

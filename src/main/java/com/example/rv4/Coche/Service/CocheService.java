@@ -3,11 +3,9 @@ package com.example.rv4.Coche.Service;
 import com.example.rv4.BaseService;
 import com.example.rv4.Coche.Domain.Coche;
 import com.example.rv4.Coche.Repository.CocheRepository;
-import com.sipios.springsearch.anotation.SearchSpec;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.domain.Specification;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -49,7 +47,7 @@ public class CocheService extends BaseService<Coche, Long, CocheRepository> {
         return cocheRepository.findById(id);
     }
 
-    public Page<Coche> getCoches(Pageable pageable, @SearchSpec Specification<Coche> specs){
+    /*public Page<Coche> getCoches(Pageable pageable, @SearchSpec Specification<Coche> specs){
         return cocheRepository.findAll(specs,pageable);
-    }
+    }*/
 }

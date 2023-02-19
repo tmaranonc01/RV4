@@ -34,6 +34,7 @@ public class PedidoController {
         pedido.setTotal(pedido.getTotal());
         pedido.setOrigen(pedido.getOrigen());
         pedido.setDestino(pedido.getDestino());
+        pedido.setDesguaces(pedido.getDesguaces());
         Pedido pedido1 = pedidoService.addPedido(pedido);
         return new ResponseEntity<>(pedido1, HttpStatus.OK);
     }

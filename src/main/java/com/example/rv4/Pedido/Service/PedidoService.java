@@ -32,7 +32,7 @@ public class PedidoService extends BaseService<Pedido, Long, PedidoRepository> {
     public void deletePedido(Long id){
         try {
             pedidoRepository.delete(pedidoRepository.findById(id).get());
-        } catch (Exception e){
+        }catch (Exception e){
             e.printStackTrace();
         }
     }
@@ -44,4 +44,5 @@ public class PedidoService extends BaseService<Pedido, Long, PedidoRepository> {
     public Optional<Pedido> getPedidoById(Long id){
         return pedidoRepository.findById(id);
     }
+
 }

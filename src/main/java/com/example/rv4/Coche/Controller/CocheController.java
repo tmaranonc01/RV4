@@ -2,16 +2,11 @@ package com.example.rv4.Coche.Controller;
 
 import com.example.rv4.Coche.Domain.Coche;
 import com.example.rv4.Coche.Service.CocheService;
-import com.sipios.springsearch.SpecificationImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.domain.Specification;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.sipios.springsearch.anotation.SearchSpec;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -35,20 +30,21 @@ public class CocheController {
         return cocheService.getCocheById(id);
     }
 
-    @GetMapping("/paginado")
+    /*@GetMapping("/paginado")
     public ResponseEntity <Page<Coche>> listaCoches(@PageableDefault(size = 10, page = 0) Pageable pageable, @SearchSpec Specification<Coche> specs){
         Page<Coche> coches = cocheService.getCoches(pageable,specs);
         if (pageable.getPageNumber() > coches.getTotalPages()){
             return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(coches, HttpStatus.OK);
-    }
+    }*/
 
     @PostMapping
     public ResponseEntity<Coche> addCoche(@RequestBody Coche coche){
         coche.setModelo(coche.getModelo());
         coche.setMotor(coche.getMotor());
         coche.setAno(coche.getAno());
+        coche.setPiezas(coche.getPiezas());
         Coche coche1 = cocheService.addCoche(coche);
         return new ResponseEntity<>(coche1, HttpStatus.OK);
     }

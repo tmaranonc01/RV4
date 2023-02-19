@@ -48,6 +48,7 @@ public class DireccionController {
         direccion.setCalle(direccion.getCalle());
         direccion.setPortal(direccion.getPortal());
         direccion.setPoblacion(direccion.getPoblacion());
+        direccion.setUsuario(direccion.getUsuario());
         Direccion direccion1 = direccionService.addDireccion(direccion);
         return new ResponseEntity<>(direccion1, HttpStatus.OK);
     }

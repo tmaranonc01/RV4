@@ -1,7 +1,6 @@
 package com.example.rv4.Pieza.Controller;
 
 import com.example.rv4.Pieza.Domain.Pieza;
-import com.example.rv4.Pieza.Service.FileStorageService;
 import com.example.rv4.Pieza.Service.PiezaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,9 +18,6 @@ public class PiezaController {
 
     @Autowired
     private PiezaService piezaService;
-
-    @Autowired
-    private FileStorageService fileStorageService;
 
 
     @GetMapping
@@ -44,7 +40,7 @@ public class PiezaController {
         return new ResponseEntity<>(pieza1, HttpStatus.OK);
     }
 
-    @PostMapping("/fichero")
+   /* @PostMapping("/fichero")
     public ResponseEntity<Pieza> addPieza(@RequestBody Pieza nuevaPieza, @RequestParam("fichero")MultipartFile file) {
         Pieza pieza = null;
         try {
@@ -60,7 +56,7 @@ public class PiezaController {
             e.printStackTrace();
         }
         return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-    }
+    }*/
 
     @PutMapping("/{id}")
     public ResponseEntity<Pieza> modifyPieza(@RequestBody Pieza nuevaPieza){

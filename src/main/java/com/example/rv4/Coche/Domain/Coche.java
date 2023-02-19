@@ -1,9 +1,10 @@
 package com.example.rv4.Coche.Domain;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+
 import com.example.rv4.Pieza.Domain.Pieza;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
